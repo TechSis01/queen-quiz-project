@@ -20,6 +20,7 @@ body{
   text-align: center;
   border-radius: 5px;
 }
+
 .login-container input{
     padding:1em 1em;
     border-radius: 5px;
@@ -47,11 +48,85 @@ body{
   color:#fff;
   border-radius: 5px;
   cursor:pointer;
-  font-family: 'Public Sans', sans-serif;
-  /* pointer-events: none; */
+  font-family: 'Public Sans', sans-serif; 
+}
+#login-instruction{
+  font-weight: bold;
+  color:red;
 }
 
 /* ==============================QUESTIONS CONTAINER============================= */
 .question-container{
-  background-color: white;
+  background-color: #fff;
+  width:50%;
+  margin:10em auto;
+  padding:2em 2em;
+  border-radius: 5px; 
+}
+.question-container-empty{
+  display:none;
+}
+.question-container h4{
+  text-align: center;
+}
+.options div{
+  border:1px solid #dee2e6;
+  margin-bottom:1em;
+  padding:1em;
+  border-radius: 10px;
+}
+.option-correct{
+  background-color:#007200;
+  color:white;
+}
+.test{
+  background-color: green;
+  color:white;
+}
+.test2{
+   background-color: red;
+  color:white; 
+} 
+/* TEST 1 AND TEST 2 ARE THE CLASSSES ADDED TO KNOW WHICH ANSWER IS CORRECT WHEN YOU CLICK ON THE WRONG OPTION */
+.timer-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#timer{
+  border:1px solid #dee2e6;
+  padding:0.5em;
+  border-radius: 50%;
+}
+.next-btn{
+  padding:1em 1em;
+  background-color: #007200;
+  border:none;
+  outline:none;
+  color:#fff;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family: 'Public Sans', sans-serif;
+}
+.disable-next-btn{
+  pointer-events: none;
+}
+
+/*=========================== RESULT CONTAINER ======================================= */
+.result-Container{
+  background-color: #fff;
+  width:50%;
+  margin:10em auto;
+  padding:2em 2em;
+  border-radius: 5px; 
+}
+.result-Container button{
+  padding:1em 1em;
+  background-color: #007200;
+  border:none;
+  outline:none;
+  color:#fff;
+  border-radius: 5px;
+  cursor:pointer;
+  font-family: 'Public Sans', sans-serif; 
 }
