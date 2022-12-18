@@ -133,7 +133,7 @@ const Questions = ()=>{
             <div className={`question-container ${displayResult ? "question-container-empty" : ""}`}>
                     <div className="timer-container">
                         <h4>{questions[questionCount].query}</h4>
-                        <div id="timer">{timer}</div>
+                        <div id="timer" className={`${timer < 5 ? "timer-red" : " "}`}>{timer}</div>
                     </div>
                 <div className="options-container">
                         <div className="options">

@@ -35,6 +35,12 @@ function App() {
 
   //FUNCTION TO UPDATE THE TIMER(COUNTDOWN)
   useEffect(()=>{
+    if(timer === 0 && displayQuiz === true){//This makes sure that the questions do not change to the next question, if the user hasnt logged in yet, so it checks for when the timer is at zero, and it is still at question number one, instead of changing to the next question, it is going to reset the timer back to 20
+      setTimer(20)
+    }
+    else if(timer === 0 && questionCount < questions.length ){
+      changeQuestion()//THIS MAKES SURE THAT ONCE THE TIME ELAPSES, IT GOES TO THE NEXT QUESTION
+    }
     const Quiztimer =
     timer > 0 && setInterval(() => setTimer(timer - 1), 1000);
   return () => clearInterval(Quiztimer);
@@ -85,6 +91,7 @@ function App() {
     }
     else if(firstName.length > 0){
     setDisplayQuiz(false)
+    setTimer(20)//Resets the timer to 20 when we start the quiz proper
     }
   }
 

@@ -25,20 +25,20 @@ export const questions = [
         answer:283,
     },
     {
-        query:"What would I eat on a very broke day",
+        query:"What would I eat  everyday",
         optionA:"rice and stew",
         optionB:"beans and plantain",
         optionC:"indomie",
         optionD:"fried plantain and eggsauce",
-        answer:"beans and plantain"
+        answer:"rice and stew"
     },
     {
         query:"What leadership post did I hold in secondary school",
-        optionA:"labour prefect",
+        optionA:"Labour prefect",
         optionB:"Social prefect",
-        optionC:"Social prefect",
+        optionC:"Library prefect",
         optionD:"Assistant Senior Prefect",
-        answer:"labour prefect"
+        answer:"Labour prefect"
     },
     {
         query:"What year did I graduate from secondary school",
