@@ -1,5 +1,5 @@
 import {useState,useContext,useEffect,Fragment} from 'react'
-import { globalVariable } from '../App'
+import { globalVariable } from './Container'
 import { questions } from './QuestionBank'
 const Result = ()=>{
     const {firstName,totalScore}=useContext(globalVariable)

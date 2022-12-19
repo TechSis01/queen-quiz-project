@@ -1,5 +1,5 @@
 import {useState, Fragment,useContext,useEffect,useRef} from 'react'
-import { globalVariable } from '../App'
+import { globalVariable } from './Container'
 import { questions } from './QuestionBank'
 
 const Questions = ()=>{
@@ -35,21 +35,19 @@ const Questions = ()=>{
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-
+                
                     setTimeout(()=>{
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
+                        disableNextBtn()
                     },1000)
-                    // disableNextBtn()
                 }
-            })
-            
+            })  
         }
         else if(optionARef.current.innerText === correctAnswer){
             setCorrectAnswerA(true)
             updateTotalScore()
             disableNextBtn()
-
         }  
     }
 
@@ -62,12 +60,12 @@ const Questions = ()=>{
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-                    // disableNextBtn()
-
                     setTimeout(()=>{
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
+                        disableNextBtn()
                     },1000)
+                   
                 }
             })
         }
@@ -86,12 +84,15 @@ const Questions = ()=>{
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-                    // disableNextBtn()
+                    
 
                     setTimeout(()=>{
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
+                        disableNextBtn()
                     },1000)
+
+                   
                 }
             })
         }
@@ -111,12 +112,14 @@ const Questions = ()=>{
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-                    // disableNextBtn()
+            
 
                     setTimeout(()=>{
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
+                        disableNextBtn()
                     },1000)
+                    
                 }
             })
         }

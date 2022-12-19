@@ -1,5 +1,5 @@
 import {useState,Fragment,useContext} from 'react'
-import { globalVariable } from '../App'
+import { globalVariable } from './Container'
 import Result from './Result'
 const Login = ()=>{
     const {displayQuiz,changeDisplay,firstName,setUserName} = useContext(globalVariable)
