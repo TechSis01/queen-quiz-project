@@ -51,7 +51,9 @@ const Questions = ()=>{
             setCorrectAnswerA(true)
             updateTotalScore()
             disableNextBtn()
-            changeQuestion()
+            setTimeout(()=>{
+                changeQuestion()
+            },1000)
         }  
 
     }
@@ -81,7 +83,9 @@ const Questions = ()=>{
             setCorrectAnswerB(true)
             updateTotalScore()
             disableNextBtn()
-            changeQuestion()
+            setTimeout(()=>{
+                changeQuestion()
+            },1000)
         }
     
     }
@@ -107,7 +111,9 @@ const Questions = ()=>{
             setCorrectAnswerC(true)
             updateTotalScore()
             disableNextBtn()
-            changeQuestion()
+            setTimeout(()=>{
+                changeQuestion()
+            },1000)
         }
 
     }
@@ -136,7 +142,9 @@ const Questions = ()=>{
             setCorrectAnswerD(true)
             updateTotalScore()
             disableNextBtn()
-            changeQuestion()
+            setTimeout(()=>{
+                changeQuestion()
+            },1000)
         }
     }
 
