@@ -30,16 +30,19 @@ const Questions = ()=>{
     const checkAnswer = (e)=>{
         let correctAnswer = questions[questionCount].answer.toString()
         if(optionARef.current.innerText !== correctAnswer ){
-            optionArray.forEach((option)=>{//Here I am looping through the options array to find the correct option
+            optionArray.forEach((option)=>{
+              //Here I am looping through the options array to find the correct option
                 if(option.innerText === correctAnswer){
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-                
+                   
                     setTimeout(()=>{
+                        
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
-                        disableNextBtn()
+                        changeQuestion()
+                       
                     },1000)
                 }
             })  
@@ -49,6 +52,7 @@ const Questions = ()=>{
             updateTotalScore()
             disableNextBtn()
         }  
+
     }
 
     //Function to check for the correct answer for option B
@@ -56,16 +60,19 @@ const Questions = ()=>{
         let correctAnswer = questions[questionCount].answer.toString()
         if(optionBRef.current.innerText !== correctAnswer ){
             optionArray.forEach((option)=>{
+              
                 if(option.innerText === correctAnswer){
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
+        
                     setTimeout(()=>{
+                    
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
-                        disableNextBtn()
+                        changeQuestion()
+                       
                     },1000)
-                   
                 }
             })
         }
@@ -74,6 +81,7 @@ const Questions = ()=>{
             updateTotalScore()
             disableNextBtn()
         }
+    
     }
     //Function to check for the correct answer for option C
     const checkAnswer3 = (e)=>{
@@ -84,15 +92,12 @@ const Questions = ()=>{
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-                    
-
+                   
                     setTimeout(()=>{
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
-                        disableNextBtn()
+                        changeQuestion()
                     },1000)
-
-                   
                 }
             })
         }
@@ -102,24 +107,26 @@ const Questions = ()=>{
             disableNextBtn()
 
         }
+
     }
     //Function to check for the correct answer for option D
     const checkAnswer4 = (e)=>{
         let correctAnswer = questions[questionCount].answer.toString()
         if(optionDRef.current.innerText !== correctAnswer ){
+           
             optionArray.forEach((option)=>{
+               
                 if(option.innerText === correctAnswer){
                     let incorrect = e.currentTarget
                     option.classList.add('test')
                     e.currentTarget.classList.add('test2')
-            
-
+                   
                     setTimeout(()=>{
+                        
                         option.classList.remove('test')
                         incorrect.classList.remove('test2')
-                        disableNextBtn()
+                        changeQuestion()
                     },1000)
-                    
                 }
             })
         }
