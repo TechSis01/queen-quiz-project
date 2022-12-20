@@ -51,6 +51,7 @@ const Questions = ()=>{
             setCorrectAnswerA(true)
             updateTotalScore()
             disableNextBtn()
+            changeQuestion()
         }  
 
     }
@@ -80,6 +81,7 @@ const Questions = ()=>{
             setCorrectAnswerB(true)
             updateTotalScore()
             disableNextBtn()
+            changeQuestion()
         }
     
     }
@@ -105,7 +107,7 @@ const Questions = ()=>{
             setCorrectAnswerC(true)
             updateTotalScore()
             disableNextBtn()
-
+            changeQuestion()
         }
 
     }
@@ -134,6 +136,7 @@ const Questions = ()=>{
             setCorrectAnswerD(true)
             updateTotalScore()
             disableNextBtn()
+            changeQuestion()
         }
     }
 
@@ -153,7 +156,7 @@ const Questions = ()=>{
                             <div ref={optionDRef} onClick={checkAnswer4} className = {`${correctAnswerD ? 'option-correct' : ''} ${nextbtn ? 'disable-next-btn' : ''}`} >{questions[questionCount].optionD}</div>
                         </div>
                 </div>
-                <button className="next-btn" onClick={changeQuestion}>Next</button>
+                {/* <button className="next-btn" onClick={changeQuestion}>Next</button> */}
             </div>
         </Fragment>
     )
