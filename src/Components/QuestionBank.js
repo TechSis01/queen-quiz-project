@@ -1,68 +1,68 @@
 // Question Bank
 export const questions = [
     {
-        query: "What is my Baptismal name",
-        optionA:"Rita",
-        optionB:"Queen",
-        optionC:"Queendoline",
-        optionD:"Queeneth",
-        answer:"Queendoline"
+        query: "How many siblings do I have",
+        optionA:"2",
+        optionB:"4",
+        optionC:"3",
+        optionD:"1",
+        answer:"3"
     },
     {
-        query:"What is my current Age as at 2022",
-        optionA:"23 years old",
-        optionB:"21 years old",
-        optionC:"20 years old",
-        optionD:"22 years old",
-        answer:"22 years old"
+        query:"What is the name of the secondary school I attended",
+        optionA:"Rayfield Intl Secondary School",
+        optionB:"Topfaith model high school",
+        optionC:"Ritman Colledge,ikot ekpene",
+        optionD:"Bright Stars Model College",
+        answer:"Rayfield Intl Secondary School"
     },
     {
-        query:"What was my Jamb score in 2018",
+        query:"What was my Jamb score in 2017",
         optionA:283,
-        optionB:250,
-        optionC:273,
-        optionD:293,
-        answer:283,
+        optionB:239,
+        optionC:250,
+        optionD:210,
+        answer:239,
     },
     {
-        query:"What would I eat  everyday",
-        optionA:"rice and stew",
-        optionB:"beans and plantain",
-        optionC:"indomie",
-        optionD:"fried plantain and eggsauce",
-        answer:"rice and stew"
+        query:"On which date did I meet Erica of BBN",
+        optionA:"11 Jan",
+        optionB:"16 Feb",
+        optionC:"12 Feb",
+        optionD:"14 Feb",
+        answer:"14 Feb"
     },
     {
-        query:"What leadership post did I hold in secondary school",
-        optionA:"Labour prefect",
-        optionB:"Social prefect",
-        optionC:"Library prefect",
-        optionD:"Assistant Senior Prefect",
-        answer:"Labour prefect"
+        query:"My favourite subject in secondary school",
+        optionA:"Geography",
+        optionB:"Biology",
+        optionC:"Further Maths",
+        optionD:"Chemistry",
+        answer:"Geography"
     },
     {
-        query:"What year did I graduate from secondary school",
-        optionA:2015,
-        optionB:2017,
-        optionC:2014,
-        optionD:2016,
-        answer:2016
+        query:"My favourite subject after seconday school",
+        optionA:"Chemistry",
+        optionB:"Physics",
+        optionC:"Mathematics",
+        optionD:"English",
+        answer:"Chemistry"
     },
     {
-        query:"Which hostel did I live in when I was in 200level",
+        query:"Which hostel did I live in when I was in 100level",
         optionA:"Akpabio hostel",
-        optionB:"Balewa Hostel",
+        optionB:"Awolowo Hostel",
         optionC:"Aja Nwachukwu Hostel",
-        optionD:"Nkrumah Hostel",
-        answer:"Akpabio hostel"
+        optionD:"Nkruma Hostel",
+        answer:"Nkruma hostel"
     },
     {
-        query:"What dance crew was I part of in my 100/200 level",
-        optionA:"Steppers DC",
-        optionB:"The Mop",
-        optionC:"Irobot DC",
-        optionD:"XMD",
-        answer:"Irobot DC"
+        query:"Which level did I encounter my first robbery",
+        optionA:"200 level",
+        optionB:"100 level",
+        optionC:"400 level",
+        optionD:"300 level",
+        answer:"100 level"
     },
     {
         query:"Which Big Brother Naija housemate was I Obessesed about",
@@ -97,27 +97,27 @@ export const questions = [
         answer:"Web development"
     },
     {
-        query:"What am I currently Learning",
-        optionA:"Next.js",
-        optionB:"React.js",
-        optionC:"Javascript",
-        optionD:"Vue",
-        answer:"React.js"
+        query:"What did I learn first in tech",
+        optionA:"CSS",
+        optionB:"Java",
+        optionC:"HTML",
+        optionD:"Javascript",
+        answer:"Java"
     },
     {
-        query:"How long did I learn Vanilla Javascript, before choosing a framework",
-        optionA:"8 months",
-        optionB:"4 months",
-        optionC:"5 months",
-        optionD:"10 months",
-        answer:"5 months"
+        query:"Am I Currently in love?",
+        optionA:"Madly in love",
+        optionB:"I hate everyone",
+        optionC:"I feel indifferent",
+        optionD:"Finding my peace",
+        answer:"Finding my peace"
     },
     {
-        query:"When was I born",
-        optionA:"Feb 11th",
-        optionB:"April 11th",
-        optionC:"March 11th",
-        optionD:"September 11th",
-        answer:"March 11th"
+        query:"Which local government do I come from",
+        optionA:"Oron",
+        optionB:"Uruan",
+        optionC:"Ikot Ekpene",
+        optionD:"Ibesikpo Asutan",
+        answer:"Uruan"
     },
 ]
